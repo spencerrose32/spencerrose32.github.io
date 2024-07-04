@@ -4,46 +4,82 @@ permalink: /blog
 published: true
 ---
 <!-- Main Container -->
-<div id="banners"></div>
-<div class="container">
-  {% for post in site.posts %}
-  <div class="blog-post">
-      <h1 class="blog-title">
-        <i class="fa fa-file-text"></i>
-        {{ post.title }}
-      </h1>
-      <br>
-      <img src="assets/img/slider/{{ post.picture }}" alt="Feature-img" align="right" width="100%" class="blog-image">
-      <br>
-      <p>{{ post.description }}</p>
-      <span class="badge">{{ post.date | date: '%B %d, %Y' }}</span>
-      <div class="pull-right">
-        {% if post.label_default %}
-          <span class="label label-default">{{ post.label_default }}</span> 
-        {% endif %}
+<section class="quote-section">
+        <div class="quote-content">
+                <p class="quote-text">"The most difficult thing is the decision
+                        to act, the rest is merely tenacity."</p>
+                <p class="quote-author">~Amelia Earhart~</p>
+        </div>
+</section>
 
-        {% if post.label_primary %}
-          <span class="label label-primary">{{ post.label_primary }}</span> 
-        {% endif %}
-        
-        {% if post.label_success %}
-          <span class="label label-success">{{ post.label_success }}</span> 
-        {% endif %}
-        
-        {% if post.label_info %}
-          <span class="label label-info">{{ post.label_info }}</span> 
-        {% endif %}
-        
-        {% if post.label_warning %}
-          <span class="label label-warning">{{ post.label_warning }}</span>
-        {% endif %}
-
-        {% if post.label_danger %}
-          <span class="label label-danger">{{ post.label_danger }}</span>
-        {% endif %}
-      </div>         
-    </div>
-    <hr>
-  {% endfor %}
-</div>
-<!--End Main Container -->
+<section class="blog-articles-section">
+        <!-- Start Article 1 -->
+        <div class="article">
+                <div class="article-content">
+                        <h2 class="article-title"><a
+                                        href="article1.html">Uniting Computer
+                                        Science and Economics</a></h2>
+                        <p class="article-meta">TBD · X min read</p>
+                </div>
+                <div class="article-image">
+                        <img src="../assets/img/slider/article1.jpg"
+                                alt="Prevaricate Nationalism">
+                </div>
+        </div>
+        <!-- End Article 1 -->
+        <!-- Start Article 2 -->
+        <div class="article">
+                <div class="article-content">
+                        <h2 class="article-title"><a href="article2.html">The
+                                        Race for AI Dominance</a></h2>
+                        <p class="article-meta">TBD · X min read</p>
+                </div>
+                <div class="article-image">
+                        <img src="../assets/img/slider/article1.jpg"
+                                alt="Another Article Title">
+                </div>
+        </div>
+        <!-- End Article 2 -->
+        <!-- Start Article 3 -->
+        <div class="article">
+                <div class="article-content">
+                        <h2 class="article-title"><a
+                                        href="article2.html">Exploring Financial
+                                        Concepts</a></h2>
+                        <p class="article-meta">TBD · X min read</p>
+                </div>
+                <div class="article-image">
+                        <img src="../assets/img/slider/article1.jpg"
+                                alt="Another Article Title">
+                </div>
+        </div>
+        <!-- End Article 3 -->
+        <!-- Start Article 4 -->
+        <div class="article">
+                <div class="article-content">
+                        <h2 class="article-title"><a
+                                        href="article2.html">Ventures</a></h2>
+                        <p class="article-meta">TBD · X min read</p>
+                </div>
+                <div class="article-image">
+                        <img src="../assets/img/slider/article1.jpg"
+                                alt="Another Article Title">
+                </div>
+        </div>
+        <!-- End Article 4 -->
+        <!-- Start Article 5 -->
+        <div class="article">
+                <div class="article-content">
+                        <h2 class="article-title"><a
+                                        href="article2.html">Private vs. Public
+                                        Markets</a></h2>
+                        <p class="article-meta">TBD · X min read</p>
+                </div>
+                <div class="article-image">
+                        <img src="../assets/img/slider/article1.jpg"
+                                alt="Another Article Title">
+                </div>
+        </div>
+        <!-- End Article 5 -->
+        <!-- Add more articles as needed -->
+</section>
