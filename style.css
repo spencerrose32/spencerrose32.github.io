@@ -561,64 +561,70 @@ p.blog-text {
 
 
 /* ----- Footer ----- */
-.footer-widget {
-        color: white;
-        margin-top: 55px;
-        position: absolute;
+.footer {
+        background-color: #f8f9fa;
+        /* Light grey background */
+        padding: 50px 0;
+        /* Top and bottom padding */
+        text-align: center;
+        border-top: 2px solid #000;
+        /* Black line across the top */
 }
 
-footer .widget h4 {
-        margin-top: 20px;
-        font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        text-transform: uppercase;
-        text-shadow: 0 1px 0 rgba(255, 255, 255, .7);
-}
-
-footer .widget p {
-        line-height: 24px;
-}
-
-footer .widget i {
-        padding-right: 7px;
-}
-
-footer {
-        margin-top: 40px;
-        left: 0;
-        right: 0;
-        background: black;
-        bottom: 0px;
-}
-
-footer h3 {
-        color: #dadada;
+.footer h2 {
+        color: #87CEEB;
+        /* Blue text color */
+        font-size: 2em;
         margin-bottom: 20px;
 }
 
-.footer-contact {
-        color: white;
+.footer p {
+        color: #6c757d;
+        /* Grey text color */
+        margin-bottom: 20px;
 }
 
-
-/*Social Buttons */
-#social-icons {
-        font-size: 22px;
+.footer .subscribe-form {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
 }
 
-#social-icons .btn-group {
-        color: #55CBD2;
-        margin-right: 15px;
+.footer .subscribe-form input[type="email"] {
+        padding: 10px;
+        font-size: 1em;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        margin-right: 10px;
 }
 
-#social-icons .btn-group:hover {
-        color: #ffffff;
-}
-
-.copyright {
+.footer .subscribe-form button {
+        padding: 10px 20px;
+        font-size: 1em;
         color: #fff;
-        padding: 20px 0px 10px 0px;
-        background-color: rgb(23, 23, 23);
+        background-color: #87CEEB;
+        border: none;
+        border-radius: 0.25rem;
+        cursor: pointer;
+}
+
+.footer .subscribe-form button:hover {
+        background-color: #87CEEB;
+}
+
+.footer .social-icons {
+        margin-top: 20px;
+}
+
+.footer .social-icons .social-icon {
+        margin: 0 10px;
+        color: #87CEEB;
+        font-size: 1.5em;
+        text-decoration: none;
+}
+
+.footer .social-icons .social-icon:hover {
+        color: #007bff;
 }
 
 /*
@@ -982,7 +988,7 @@ footer h3 {
         /* Center items horizontally */
         height: 100vh;
         /* Full viewport height */
-        background-color: 0 1px 0 rgba(255, 255, 255, .7);
+        background-color: 0 1px 0 #f8f8f8;
         /* Light background color */
         padding: 60px 0;
         /* Adjust padding as needed */
@@ -1115,7 +1121,7 @@ footer h3 {
         position: relative;
         height: 100vh;
         /* Full viewport height */
-        background: url('../metal2.jpg') no-repeat center center/cover !important;
+        background: url('../img/slider/metal3.jpg') no-repeat center center/cover !important;
         /* Adjust path to your image */
         display: flex;
         justify-content: center;
@@ -1191,12 +1197,13 @@ footer h3 {
         justify-content: center;
         align-items: center;
         text-align: center;
-        color: white;
+        font-size: large;
+        color: rgba(255, 255, 255);
         /* Text color */
 }
 
 .quote-content {
-        background: rgba(255, 255, 255, 0.5)
+        background: rgba(255, 255, 255)
                 /* Optional: Add a semi-transparent background to improve text readability */
                 padding: 20px;
         border-radius: 10px;
@@ -1216,6 +1223,20 @@ footer h3 {
         font-weight: bold;
 }
 
+.quote-background-text {
+        color: white;
+        font-size: 2em;
+        /* Adjust font size as needed */
+        line-height: 1.5em;
+        /* Adjust line height to increase spacing between lines */
+        background-color: rgba(0, 0, 0, 0.295);
+        /* Semi-transparent background */
+        padding: 10px 20px;
+        /* Adjust padding as needed */
+        border-radius: 5px;
+        /* Optional: Add rounded corners */
+}
+
 /*
 * ==========================================================================
 * Blog-Articles
@@ -1228,6 +1249,7 @@ footer h3 {
         /* Space between articles */
         padding: 20px;
         background-color: #f9f9f9;
+        line-height: 5.0em;
 }
 
 .article {
@@ -1273,4 +1295,129 @@ footer h3 {
         /* Set a max height */
         border-radius: 8px;
         object-fit: cover;
+}
+
+
+/*
+* ==========================================================================
+* About Section
+* ==========================================================================
+*/
+.about-header-section {
+        position: relative;
+        height: 75vh;
+        /* Adjust height as needed */
+        background: url('../img/slider/boston.jpg') no-repeat center center/cover;
+        /* Adjust path to your image */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: large;
+        color: rgba(255, 255, 255);
+        /* Text color */
+}
+
+.about-quote-content {
+        background: rgba(255, 255, 255)
+                /* Optional: Add a semi-transparent background to improve text readability */
+                padding: 20px;
+        border-radius: 10px;
+}
+
+.about-quote-text {
+        font-size: 2em;
+        /* Adjust font size as needed */
+        margin: 0;
+        font-style: italic;
+}
+
+.about-quote-author {
+        font-size: 1.5em;
+        /* Adjust font size as needed */
+        margin-top: 10px;
+        font-weight: bold;
+}
+
+.about-quote-background-text {
+        color: white;
+        font-size: 2em;
+        /* Adjust font size as needed */
+        line-height: 1.5em;
+        /* Adjust line height to increase spacing between lines */
+        background-color: rgba(0, 0, 0, 0.295);
+        /* Semi-transparent background */
+        padding: 10px 20px;
+        /* Adjust padding as needed */
+        border-radius: 5px;
+        /* Optional: Add rounded corners */
+}
+
+/*
+* ==========================================================================
+* Homepage-header Section
+* ==========================================================================
+*/
+.homepage-header-section {
+        position: relative;
+        height: 75vh;
+        /* Adjust height as needed */
+        background: url('../img/slider/sydney.jpg') no-repeat center center/cover;
+        /* Adjust path to your image */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        font-size: large;
+        line-height: 2.5em;
+        /* Text color */
+}
+
+.homepage-header-background-text {
+        color: white;
+        font-size: 2em;
+        /* Adjust font size as needed */
+        line-height: 1.5em;
+        /* Adjust line height to increase spacing between lines */
+        background-color: rgba(0, 0, 0, 0.295);
+        /* Semi-transparent background */
+        padding: 10px 20px;
+        /* Adjust padding as needed */
+        border-radius: 5px;
+        /* Optional: Add rounded corners */
+}
+
+/*
+* ==========================================================================
+* contact-header Section
+* ==========================================================================
+*/
+.contact-header-section {
+        position: relative;
+        height: 75vh;
+        /* Adjust height as needed */
+        background: url('../img/slider/nyc.jpg') no-repeat center center/cover;
+        /* Adjust path to your image */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        font-size: large;
+        /* Text color */
+}
+
+.contact-background-text {
+        color: white;
+        font-size: 2em;
+        /* Adjust font size as needed */
+        line-height: 1.5em;
+        /* Adjust line height to increase spacing between lines */
+        background-color: rgba(0, 0, 0, 0.295);
+        /* Semi-transparent background */
+        padding: 10px 20px;
+        /* Adjust padding as needed */
+        border-radius: 5px;
+        /* Optional: Add rounded corners */
 }
